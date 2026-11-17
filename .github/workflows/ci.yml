@@ -6,6 +6,7 @@ on:
   pull_request:
 
 jobs:
+
   python:
     runs-on: ubuntu-latest
 
@@ -28,7 +29,6 @@ jobs:
       - name: Lancer les tests
         run: pytest -v
         working-directory: python-app
-
 
   node:
     runs-on: ubuntu-latest
@@ -53,7 +53,6 @@ jobs:
         run: npm test
         working-directory: node-app
 
-  
   java:
     runs-on: ubuntu-latest
 
@@ -74,8 +73,6 @@ jobs:
         run: mvn -B package
         working-directory: java-app
 
-
-  
   php:
     runs-on: ubuntu-latest
 
